@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  padding: 30px 50px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.05);
+}
+
+img{
+  width: 150px;
+  animation: rotation 2s infinite;
+}
+
+h1{
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+@keyframes rotation{
+  0%{
+    transform: rotate(0);
+  }100%{
+    transform: rotate(360deg);
+  }
+}
+
+
